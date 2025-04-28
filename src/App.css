@@ -46,20 +46,21 @@
 }
 
 .text-overlay {
+  width: 995px;
+  height: 106px;
   position: absolute;
   top: 50%; /* 画像の中央 */
   left: 20%;
   transform: translate(-50%, -50%); /* 完全に中央揃え */
-  font-size: 10vw; /* フォントサイズを画面幅に応じて調整 */
+  font-size: 5vw; /* フォントサイズ */
   font-weight: bold;
   text-align: center;
   white-space: nowrap; /* 改行を防止 */
-
   opacity: 0;
 }
 
 .text-overlay:hover {
-  color: black; /* 文字の色を白に設定 */
+  color: black; /* 文字の色 */
   text-shadow: 
     2px 2px 4px rgba(255, 255, 255, 0.7), /* 影をつける（右下） */
     -2px -2px 4px rgba(255, 255, 255, 0.7), /* 影をつける（左上） */
