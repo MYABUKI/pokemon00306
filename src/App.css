@@ -46,7 +46,7 @@
 }
 
 .text-overlay {
-  width: 100%;
+  width: 100vw;
   height: 106px;
   position: absolute;
   top: 50%; /* 画像の中央 */
