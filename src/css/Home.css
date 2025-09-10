@@ -1,0 +1,58 @@
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* 横方向中央 */
+  align-items: center; /* 縦方向中央 */
+}
+
+/* 文字 */
+.p-text {
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* 画像 */
+.image-container {
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  gap: 10px; /* 画像間の隙間 */
+  align-items: center; /* 画像を中央揃え */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 995px;
+  height: 106px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper img.hover-image {
+  opacity: 0;
+}
+
+.image-wrapper:hover img.hover-image {
+  opacity: 0.5;
+}
+
+.image-wrapper:hover img.default-image {
+  opacity: 1;
+}
+
+.hover-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
